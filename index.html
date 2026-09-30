@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
-  <title>Samay LLC — App development</title>
-  <meta name="description" content="Samay LLC is an independent software company that designs and builds apps for iPhone.">
+  <title>Samay LLC — Apps and software consulting</title>
+  <meta name="description" content="Samay LLC is an independent software company that makes its own iPhone apps and consults on product and app development.">
   <meta name="color-scheme" content="light dark">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <style>
@@ -75,6 +75,14 @@
     ul.principles { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
     ul.principles li { color: var(--text-2); }
     ul.principles strong { color: var(--text); font-weight: 600; }
+    .services { display: grid; gap: 12px; }
+    @media (min-width: 640px) { .services { grid-template-columns: repeat(3, 1fr); } }
+    .service {
+      padding: 18px; border: 1px solid var(--border); border-radius: 16px; background: var(--surface);
+    }
+    .service h3 { margin: 0 0 6px; font-size: 16px; }
+    .service p { margin: 0; color: var(--text-2); font-size: 15px; }
+    .cta { margin: 16px 0 0; color: var(--text-2); }
     footer { padding: 32px 0 48px; border-top: 1px solid var(--border); color: var(--text-3); font-size: 14px; }
   </style>
 </head>
@@ -89,8 +97,8 @@
 
     <main>
       <div class="hero">
-        <h1>Small, focused apps for iPhone.</h1>
-        <p class="lede">Samay LLC is an independent software company that designs, builds, and publishes mobile apps.</p>
+        <h1>We build apps, and help teams build theirs.</h1>
+        <p class="lede">Samay LLC is an independent software company. We make our own iPhone apps, and we take on consulting work in product and app development.</p>
       </div>
 
       <section aria-labelledby="apps">
@@ -107,12 +115,31 @@
       </section>
 
       <section aria-labelledby="how">
-        <h2 id="how">How we build</h2>
+        <h2 id="how">How we build our apps</h2>
         <ul class="principles">
           <li><strong>Private by design.</strong> No accounts, no ads, no tracking.</li>
           <li><strong>On-device first.</strong> Your data stays on your device.</li>
           <li><strong>Simple pricing.</strong> Free to try, with a one-time purchase instead of a subscription.</li>
         </ul>
+      </section>
+
+      <section aria-labelledby="consulting">
+        <h2 id="consulting">Consulting</h2>
+        <div class="services">
+          <div class="service">
+            <h3>Product strategy</h3>
+            <p>Turning an idea into a focused first version: what to build, what to leave out, and how to launch it.</p>
+          </div>
+          <div class="service">
+            <h3>App development</h3>
+            <p>Designing, building, and shipping iPhone apps, from prototype to App Store release.</p>
+          </div>
+          <div class="service">
+            <h3>Technical advising</h3>
+            <p>A second opinion on architecture, tooling, and launch plans for teams building software.</p>
+          </div>
+        </div>
+        <p class="cta">Have a project in mind? <a href="mailto:rohan@rohanspuri.com?subject=Consulting%20inquiry">Tell us about it</a>.</p>
       </section>
 
       <section aria-labelledby="contact">
