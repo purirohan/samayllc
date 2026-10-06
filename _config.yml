@@ -1,0 +1,10 @@
+title: Samay LLC
+description: Samay LLC is an independent company that makes its own iPhone apps and offers business strategy consulting.
+url: https://samay.llc
+email: hello@samay.llc
+
+# Pages built from _layouts/default.html. Everything else (snaprecaller/,
+# brand/, assets/) has no front matter and is copied as-is.
+exclude:
+  - README.md
+  - brand/README.md

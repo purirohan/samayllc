@@ -1,14 +1,20 @@
 # Samay LLC website
 
-Static site for Samay LLC, served by GitHub Pages (custom domain: samay.llc).
+https://samay.llc, built by GitHub Pages with Jekyll (no local build step needed).
 
 | Path | Page |
 |---|---|
-| `/` | Samay LLC homepage |
-| `/snaprecaller/` | SnapRecaller landing page (App Store Marketing URL) |
-| `/snaprecaller/support.html` | SnapRecaller support (App Store Support URL) |
-| `/snaprecaller/privacy.html` | SnapRecaller privacy policy (App Store Privacy Policy URL) |
+| `/` | Home |
+| `/apps/` | Apps |
+| `/consulting/` | Consulting |
+| `/about/` | About, with company details |
+| `/contact/` | Contact |
+| `/privacy/` | Website privacy policy |
+| `/snaprecaller/` | SnapRecaller site, copied from the app repo (`AppStore/website/`); the App Store Marketing URL |
+| `/snaprecaller/support.html`, `/snaprecaller/privacy.html` | App Store Support and Privacy Policy URLs |
+| `/brand/` | Logo files |
 
-Every page has `<meta name="robots" content="noindex">`, so search engines leave the site out of their results. (Don't add a robots.txt `Disallow`: crawlers have to read a page to see its noindex.)
-
-`snaprecaller/` is copied from `AppStore/website/` in the SnapRecall app repo. Edit it there and copy it back here.
+- `_layouts/default.html` holds the shared header menu and footer, and `_includes/logo.svg` holds the logo.
+- `assets/site.css` styles the company pages; the SnapRecaller pages keep their own stylesheet.
+- Every page has `<meta name="robots" content="noindex">`, so search engines leave it out.
+- To preview locally: `jekyll build`, then serve `_site/`.
